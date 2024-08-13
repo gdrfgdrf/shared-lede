@@ -18,6 +18,8 @@ echo "src-git lienol https://github.com/Lienol/openwrt-package.git^d607aef" >> f
 echo "src-git other https://github.com/Lienol/openwrt-package.git^2b61072" >> feeds.conf.default
 echo "src-link supply $PWD/$SUPPLY_DIR" >> feeds.conf.default
 
+cat feeds.conf.default
+
 mkdir $SUPPLY_DIR && cd $SUPPLY_DIR
 git clone --depth 1 https://github.com/kenzok8/openwrt-packages.git
 git clone --depth 1 https://github.com/kenzok8/small.git
