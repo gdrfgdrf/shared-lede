@@ -36,8 +36,8 @@ ls -a
 pwd
 
 echo "start updating feeds"
-./scripts/feeds update -a
+../scripts/feeds update -a
 
 echo "start installing feeds"
-./scripts/feeds install -a
+../scripts/feeds install -a
 exit 0
