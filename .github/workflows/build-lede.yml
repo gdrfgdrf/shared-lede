@@ -137,10 +137,6 @@ jobs:
           chmod +x $CLONE_SH
           $CLONE_SH
 
-      - name: Update feeds
-        run: |
-          sh ../feeds_operation.sh
-
       - name: Modify configuration
         env:
           MODIFY_SH: ${{ steps.prepare-deployment.outputs.modify_sh }}
