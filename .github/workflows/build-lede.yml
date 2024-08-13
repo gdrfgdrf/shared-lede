@@ -139,13 +139,7 @@ jobs:
 
       - name: Update feeds
         run: |
-          echo "update first"
-          ./scripts/feeds update -a
-          echo "update again"
-          ./scripts/feeds update -a
-
-          echo "start install"
-          ./scripts/feeds install -a
+          ../feeds_operation.sh
 
       - name: Modify configuration
         env:
