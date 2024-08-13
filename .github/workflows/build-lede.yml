@@ -139,7 +139,7 @@ jobs:
 
       - name: Update feeds
         run: |
-          ../feeds_operation.sh
+          sh ../feeds_operation.sh
 
       - name: Modify configuration
         env:
