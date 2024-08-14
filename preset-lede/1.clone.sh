@@ -10,12 +10,14 @@ SUPPLY_DIR=_supply_packages
 
 cat /dev/null > feeds.conf.default
 
-echo "src-git packages https://github.com/Lienol/openwrt-packages.git^137f013" >> feeds.conf.default
-echo "src-git luci https://github.com/Lienol/openwrt-luci^609b5dd" >> feeds.conf.default
-echo "src-git-full routing https://git.openwrt.org/feed/routing.git^80817c8" >> feeds.conf.default
-echo "src-git-full telephony https://git.openwrt.org/feed/telephony.git^056e93c" >> feeds.conf.default
-echo "src-git lienol https://github.com/Lienol/openwrt-package.git^d607aef" >> feeds.conf.default
-echo "src-git other https://github.com/Lienol/openwrt-package.git^2b61072" >> feeds.conf.default
+echo "src-git packages https://github.com/openwrt/packages.git^openwrt-23.05" >> feeds.conf.default
+echo "src-git packages_lienol https://github.com/Lienol/openwrt-packages.git^23.05" >> feeds.conf.default
+echo "src-git luci https://github.com/Lienol/openwrt-luci^23.05" >> feeds.conf.default
+echo "src-git luci_lede https://github.com/coolsnowwolf/luci.git;openwrt-23.05" >> feeds.conf.default
+echo "src-git-full routing https://git.openwrt.org/feed/routing.git^openwrt-23.05" >> feeds.conf.default
+echo "src-git-full telephony https://git.openwrt.org/feed/telephony.git^openwrt-23.05" >> feeds.conf.default
+echo "src-git lienol https://github.com/Lienol/openwrt-package.git^23.05" >> feeds.conf.default
+echo "src-git other https://github.com/Lienol/openwrt-package.git^23.05" >> feeds.conf.default
 echo "src-link supply $PWD/$SUPPLY_DIR" >> feeds.conf.default
 
 echo "============================================================================="
